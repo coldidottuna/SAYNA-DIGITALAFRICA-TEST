@@ -1,0 +1,590 @@
+/* text content */
+@font-face {
+    font-family: "FarFromHomecoming";
+    src: url(fonts/Far-From\ Homecoming\ Updated.otf);
+}
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(fonts/static/Montserrat-Medium.ttf);
+}
+h1{
+    font-size: 24px;
+    font-family: "FarFromHomecoming";
+    font-weight: lighter;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 18px;
+    font-family: "FarFromHomecoming";
+    font-weight: lighter;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+h4{    
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: var(--white);
+    margin-bottom: 5px;
+}
+p
+{
+    font-family: "Montserrat";
+    color: var(--white);
+    font-size: 8px;
+    font-style: regular;
+    
+}
+
+:root{
+
+    /*------------------Color---------------*/
+    --red:#b11313;
+    --black:#000000;
+    --blue:#114c92;
+    --white:#ffffff;
+    --yellow:#f1c530;
+
+    /*Fonts and typography*/
+    --title-font: "FarFromHomecoming";
+    --body-font: "Montserrat";
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size:5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.75rem;
+
+    /*Margenes*/
+      /*-------------- Margin Bottom --------------*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --m-0-25: 0.25rem;
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+  --m-3: 3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Montserrat" ;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@media screen and (min-width: 230px) {
+
+
+.header{
+    margin: 0;
+    padding: 30px 0 0 ;
+    height: auto;
+    width: 100%;
+    background-image: url(illustration/img1.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-color: var(--red);
+
+
+} 
+.nav-menu{
+    visibility: collapse;
+}
+
+/* logo */
+.sanya-logo{
+    
+    height: 38px;
+    width: 34px;
+}
+.x-logo{
+
+    height: 12px;
+    width: 13px;
+}
+.marvel-logo{
+   
+    height: 38px;
+    width: 123px;
+}
+.brand-logo{
+    margin-bottom: 30px;
+    padding: 0;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.home-section{
+    display: inline-block;
+    justify-content: left;
+}
+.home-button{
+    margin: 20px 0;
+}
+.btn{
+    margin-right: 5px;
+    padding: 6px 10px;
+    background-color:var(--white);
+    color: var(--red);
+    outline: none;
+    border: 2px solid var(--white);
+    border-radius: 17px;
+
+}
+#btn{
+    margin-right: 5px;
+    padding: 6px 10px;
+    background-color:var(--white);
+    color: var(--red);
+    outline: none;
+    border: 2px solid var(--white);
+    border-radius: 17px;
+
+}
+.alt-btn{
+    background-color: transparent;
+    color: var(--white);
+}
+.main{
+    height: auto;
+    width: 100%;
+    background-color: var(--red);
+    border: none;
+   
+}
+.card-container{
+    margin: 60px 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1fr 3);
+    grid-gap: 20px;
+    
+}
+.card-img{
+    width: 100%;
+}
+.section{
+    padding: 40px ;
+    text-align: center;
+}
+
+/* form section */
+.form-section{
+    background-color: var(--blue);
+    background-image: url(illustration/img5.png);
+    background-size: 100% 100% ;
+    width:100%;
+    height:auto;
+    padding: 20px 40px;
+}
+.form-container{
+    margin: 60px 0;
+    text-align: center;
+}
+.inpt{
+    width: 280px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 8px 0;
+    padding-left: 10px;
+}
+.inpt-alt{
+    width: 230px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 8px 0;
+    padding-left: 10px;
+    
+    background-color: transparent;
+    border: 2px solid var(--white);
+    
+}
+
+.inpt-alt::placeholder{
+    color: var(--white);
+}
+
+/* newsletter section */
+.newsletter-section{
+    background-image: url(illustration/img6.png);
+    background-repeat: no-repeat;
+    background-size: 80% ;
+    background-position-y: 100%;
+    background-position-x: 190px;
+
+}
+.register-container{
+    margin: 50px 0 25px;
+    text-align: left;
+}
+.checkbox{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 10px;
+    text-align: left;
+    color: var(--white);
+}
+.checkbox input{
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+}
+/* footer section */
+.footer-desktop-view{
+    visibility: none; 
+}
+.footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+    font-size: 12px;
+}
+.footer-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-links{
+    text-align: left;
+    font-size: 10px;
+}
+.footer-logo{
+    margin: 30px 0;
+}
+.language-btn{
+    margin-right: 5px;
+    padding: 6px 10px;
+    background-color:var(--red);
+    color: #ffffff;
+    outline: none;
+    border-radius: 17px;
+}
+.social-network ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-network li{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 0 8px 20px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hover*/
+button:hover{
+    opacity:.5;
+    transition: .5s ease;
+}
+.nav-links:hover{
+    opacity: 0.5;
+}
+.card-container:hover{
+    box-shadow: 18px 21px 20px -7px rgba(0,0,0,0.2);
+}
+
+}
+@media screen and (min-width: 1024px){
+    /* TEXT CONTENT */
+    h1{
+        font-size: var(--big-font-size);
+        font-family: "FarFromHomecoming";
+        font-weight: lighter;
+        color: var(--white);
+        margin-bottom: 5px;
+    }
+    h2{
+        font-size: var(--h1-font-size);
+        font-family: "FarFromHomecoming";
+        font-weight: lighter;
+        color: var(--white);
+        margin-bottom: 5px;
+    }
+    h4{
+        font-size: var(--h3-font-size);
+        font-family: "Montserrat";
+        font-style: regular;
+        color: var(--white);
+        
+    }
+    p
+    {
+        font-family: "Montserrat";
+        font-size: var(--normal-font-size);
+        font-style: regular;
+        color: var(--white);
+        
+    }
+    
+    /*BUTTONS*/
+    .home-button{
+            margin: 30px 0;
+    }
+    .btn{
+            margin-right: 5px;
+            padding: 3px 5px;
+            width: 180px;
+            height: 35px;
+            background-color:var(--white);
+            color: var(--red);
+            outline: none;
+            border: 2px solid var(--white);
+            border-radius: 10px;
+        
+    }
+    #btn{
+            margin-right: 5px;
+            padding: 6px 10px;
+            background-color:var(--white);
+            color: var(--red);
+            outline: none;
+            border: 2px solid var(--white);
+            border-radius: 17px;
+        
+        }
+    .alt-btn{
+            background-color: transparent;
+            color: var(--white);
+    }
+    /*SECTIONS*/
+    .section{
+        padding: 80px ;
+        text-align: center;
+    }
+    .home-section{
+        padding-top: 160px;
+        text-align: start;
+    }
+    .card-section{
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between; */
+        justify-items: center;
+    }
+    .section-title{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: justify;
+        justify-self: start;
+        padding: 22px;
+    }
+
+    /* NAVBAR*/
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--red);
+        padding: 10px 100px;
+        margin: 0
+    }
+    .nav-menu{
+        visibility: visible;
+        display: flex;
+    }
+    .brand-logo{
+        display: none;
+    }
+    .nav-links{
+        text-decoration: none;
+        list-style: none;
+        margin: 0 10px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    body{
+        margin: 0;
+    }
+    .header{
+        padding: 0;
+        background-color: var(--red);
+        width: 100%;
+        height: auto;
+        background-image: url(illustration/img1.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        
+    } 
+
+    /*CARD CONTAINER*/
+    .card-container{
+        margin: 60px 0;
+        text-align: center;
+        border: none;
+        outline: none;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1fr 3);
+        grid-gap: 20px;
+        
+    }
+    .card-img{
+        width: 270px;
+        height: 285px;
+    }
+    .card-container{
+        margin: 0;
+        height: 580px;
+        width: 270px;
+        grid-gap: 30px;
+        justify-items: center;
+        text-align: justify;
+    }
+    
+    /*FORM SECTIONS*/
+    .form-section{
+        background-color: var(--blue);
+        background-image: url(illustration/img5.png);
+        background-size: 40% auto;
+        background-repeat: no-repeat;
+        
+    }
+    .form-container{
+        width: 50%;
+        height: 50%;
+        margin: 0;
+        display: block;
+        float: right;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .form-title{
+        text-align: end;
+    }
+
+    /*NEWSLETTER SECTIONS*/
+    .newsletter-section{
+        background-image: url(illustration/img6.png);
+        background-size: contain;
+        background-position-x:120%  ;
+    }
+    .register-container{
+        width: 50%;
+        height: auto;
+        margin: 0;
+        display: block;
+        float: left;
+        text-align: left;
+    }
+
+    /*FOOTER SECTION*/
+    .footer-mobile-view{
+        /* visibility: collapse; */
+        display: none;
+    }
+
+    .footer-section{
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+    font-size: 12px;
+    padding: 0 auto;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-links{
+    text-align: left;
+    font-size: 10px;
+}
+
+.footer-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.social-network{
+    margin-bottom: 30px;
+}
+} 
+@media screen and (min-width: 1368px){
+    .navbar{
+        padding: 10px 100px;
+    }
+    .section{
+        padding: 80px 100px;
+    }
+    .home-section{
+        margin-top: 100px;
+        padding-top: 180px;
+        text-align: start;
+    }
+    .form-section{
+        background-color: var(--blue);
+        background-image: url(illustration/img5.png);
+        background-size: 30% auto;
+        background-repeat: no-repeat;
+        
+    }
+    .form-container form{
+        width: 90%;
+        margin: 0;
+        display: block;
+        float: right;
+        text-align: right;
+        padding-right: 10px;
+        
+    }
+    .newsletter-section{
+        background-image: url(illustration/img6.png);
+        background-size: contain;
+        background-position-x:110%  ;
+    }
+    .register-container{
+        width: 50%;
+        height: 300px;
+        margin: 0;
+        display: block;
+        float: left;
+        text-align: left;
+    }
+    .footer-desktop-view{
+        visibility: visible;
+    }
+}
+/* @media screen and (max-width: 760px){
+    .footer-desktop-view{
+        display: none;
+    }
+    .home-section{
+    display: block;
+    float: left;
+    text-align: left;
+    padding: 30px;
+    } 
+    .navbar{
+        display: none;
+    }
+    .brand-logo{
+        margin-left: 30px;
+        
+    }
+    .home-btn{
+        font-size: 10px;
+    }
+
+} */
